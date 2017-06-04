@@ -167,16 +167,24 @@ a:focus {
 	margin-top: 0.5em;
 }
 
-@media screen and (max-width: 30em) {
+
+
+
+@media screen and (max-width: 60em) {
 	body {
 		font-size: 90%;
+	}
+
+	.temp-header {
+		position: relative;
+		margin: 0 auto;
+		height: auto;
+		max-width: 95%;
+		margin-top: 13%
 	}
 }
 
 @media screen and (max-height: 29em) {
-	.container {
-		height: auto;
-	}
 	.temp-header {
 		position: relative;
 		margin: 0 auto;
