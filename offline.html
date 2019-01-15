@@ -7,14 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TARELCO 2 APP</title>
-   
-  <link href="style.css" rel="stylesheet">
-  <script src="index.js" defer></script>
-  <link rel="manifest" href="manifest.json">
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
- 
-   
 
+   <link rel="stylesheet" href="css/style.css">
+
+    
 
 </head>
 
@@ -26,14 +24,15 @@
     	<input type="text" name="u" placeholder="Username" required="required" />
         <input type="password" name="p" placeholder="Password" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Log in.</button>
-        <br>
-      
     </form>
-    <button class="add-button">Add to home screen</button>
 </div>
+  
+  <script src="js/upup.min.js"></script>
+  <script>
+    UpUp.start({
+      'content': '<html><body> <div class="login"><h1>TARELCO 2 APP</h1><form method="post"><input type="text" name="u" placeholder="Username" required="required" /><button type="submit" class="btn btn-primary btn-block btn-large">Log in.</button></form></div></body></html>'});</script>
 
- 
-
+    <script  src="js/index.js"></script>
 
 
 
