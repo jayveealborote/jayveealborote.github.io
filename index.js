@@ -3,7 +3,7 @@
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/t2app/sw.js')
+           .register('/sw.js')
            .then(function() { console.log('Service Worker Registered'); });
 }
 
