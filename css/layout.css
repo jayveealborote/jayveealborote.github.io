@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'tempicons';
+	src:url('../fonts/tempicons/tempicons.eot');
+	src:url('../fonts/tempicons/tempicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/tempicons/tempicons.woff') format('woff'),
+		url('../fonts/tempicons/tempicons.ttf') format('truetype'),
+		url('../fonts/tempicons/tempicons.svg#tempicons') format('svg');
+}
+
+body {
+
+	font-family: 'Source Code Pro', monospace;
+		
+}
+
+
+a,
+a:focus {
+	outline: none;
+}
+.skills li {
+   float: left;
+   width: 50%;
+}
+
+
+.temp-header {
+	position: relative;
+	margin: 0 auto;
+	max-width: 60%;
+	margin-top: 13%;
+	padding: 1.250em;
+}
+
+
+.temp-header a {
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+.temp-header p {
+	outline: none;
+	color: #148ac7;
+	text-decoration: none;
+	font-size: 1.2em;
+	opacity: 0.7;
+}
+.temp-header a:hover,
+.temp-header a:focus {
+	opacity: 1;
+}
+
+.temp-header h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.625em;
+	line-height: 1.3;
+	color: #fff;he
+	text-align: center;
+}
+.temp-header h2 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.3;
+	color: #ee1955;
+	
+}
+.temp-header h3 {
+	margin-top: 0.938em;
+	font-weight: 300;
+	font-size: 1.1em;
+	line-height: 1.3;
+	color: #e2e3e2;
+
+	
+}
+.temp-header h3:span {
+	margin-top: 0.938em;
+	font-weight: 300;
+	font-size: 1.1em;
+	line-height: 1.3;
+	color: #000;
+
+	
+}
+
+.temp-header h1 span {
+	display: block;
+	padding: 0.4em 1em 1em;
+	font-size: 60%;
+}
+
+.temp-links {
+	margin: 0;
+}
+
+.temp-links a {
+	display: inline-block;
+	margin: 0 0.6em;
+	text-transform: uppercase;
+	letter-spacing: 0.063em;
+	font-size: 75%;
+}
+
+.temp-icon:before {
+	margin: 0 0.250em;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'tempicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.temp-icon-drop:before {
+	content: "\e001";
+}
+
+.temp-icon-prev:before {
+	content: "\e004";
+}
+
+
+.temp-demos {
+	padding: 2em 0 3em;
+}
+
+.temp-demos a {
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0.7em 1.1em;
+	outline: none;
+	border: 0.188em solid rgba(0,0,0,0.3);
+	color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	font-weight: 700;
+	opacity: 1;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.temp-demos a:hover,
+.temp-demos a.current-demo,
+.temp-demos a.current-demo:hover,
+.temp-demos a:focus {
+	border-color: #fff;
+	color: #fff;
+}
+
+/* Related demos */
+
+.temp-related {
+	padding-bottom: 2em;
+	color: rgba(0,0,0,0.4);
+}
+
+.temp-related a {
+	display: inline-block;
+	margin-top: 0.5em;
+}
+
+
+
+
+@media screen and (max-width: 60em) {
+	body {
+		font-size: 90%;
+	}
+
+	.temp-header {
+		position: relative;
+		margin: 0 auto;
+		height: auto;
+		max-width: 95%;
+		margin-top: 13%
+	}
+}
+
+@media screen and (max-height: 29em) {
+	.temp-header {
+		position: relative;
+		margin: 0 auto;
+		height: auto;
+		max-width: 100%;
+		margin-top: 13%
+	}
+	.skills {
+  	column-count: 1;
+	}
+.skills li {
+
+   width:100%;
+}
+.temp-header h2 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.0em;
+	line-height: 1.3;
+	color: #ee1955;
+	
+}
+
+}

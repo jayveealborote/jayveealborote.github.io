@@ -1,0 +1,265 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'layouticons';
+	src:url('../fonts/layouticons/layouticons.eot');
+	src:url('../fonts/layouticons/layouticons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/layouticons/layouticons.woff') format('woff'),
+		url('../fonts/layouticons/layouticons.ttf') format('truetype'),
+		url('../fonts/layouticons/layouticons.svg#layouticons') format('svg');
+}
+
+body {
+
+	font-family: 'Source Code Pro', monospace;
+		
+}
+
+
+a,
+a:focus {
+	outline: none;
+}
+.layout li {
+   float: left;
+   width: 50%;
+}
+
+
+.layout-header {
+	position: relative;
+	margin: 0 auto;
+	max-width: 60%;
+	margin-top: 10%;
+	padding: 1.250em;
+}
+
+
+.layout-header a {
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+.layout-header p {
+	outline: none;
+	color: #148ac7;
+	text-decoration: none;
+	font-size: 1.2em;
+	opacity: 0.7;
+}
+.layout-header a:hover,
+.layout-header a:focus {
+	opacity: 1;
+}
+
+.layout-header h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.625em;
+	line-height: 1.3;
+	color: #fff;he
+	text-align: center;
+}
+.layout-header h2 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.3;
+	color: #ee1955;
+	
+}
+.layout-header h3 {
+	margin-top: 0.938em;
+	font-weight: 300;
+	font-size: 1.1em;
+	line-height: 1.3;
+	color: #e2e3e2;
+
+	
+}
+.layout-header h3:span {
+	margin-top: 0.938em;
+	font-weight: 300;
+	font-size: 1.1em;
+	line-height: 1.3;
+	color: #000;
+
+	
+}
+
+.layout-header h1 span {
+	display: block;
+	padding: 0.4em 1em 1em;
+	font-size: 60%;
+}
+
+.layout-links {
+	margin: 0;
+}
+
+.layout-links a {
+	display: inline-block;
+	margin: 0 0.6em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 75%;
+}
+
+.layout-icon:before {
+	margin: 0 0.063em;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'layouticons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.layout-icon-drop:before {
+	content: "\e001";
+}
+
+.layout-icon-prev:before {
+	content: "\e004";
+}
+
+
+.layout-demos {
+	padding: 2em 0 3em;
+}
+
+.layout-demos a {
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0.7em 1.1em;
+	outline: none;
+	border: 0.188em solid rgba(0,0,0,0.3);
+	color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	font-weight: 700;
+	opacity: 1;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.layout-demos a:hover,
+.layout-demos a.current-demo,
+.layout-demos a.current-demo:hover,
+.layout-demos a:focus {
+	border-color: #fff;
+	color: #fff;
+}
+
+/* Related demos */
+
+.layout-related {
+	padding-bottom: 2em;
+	color: rgba(0,0,0,0.4);
+}
+
+.layout-related a {
+	display: inline-block;
+	margin-top: 0.5em;
+}
+
+@media screen and (max-width: 60em) {
+	body {
+		font-size: 90%;
+	}
+
+	.layout-header {
+		position: relative;
+		margin: 0 auto;
+		height: auto;
+		max-width: 95%;
+		margin-top: 13%
+	}
+}
+
+
+@media screen and (max-width: 29em) {
+	body {
+		font-size: 90%;
+	}
+	.container {
+		height: auto;
+		
+	}
+
+	.layout-header {
+		position: relative;
+		margin: 0 auto;
+		height: auto;
+		max-width: 95%;
+		margin-top: 13%
+	}
+
+	
+	.layout {
+		
+  	column-count: 1;
+  	
+  	font-size: 0.938em;
+	}
+
+
+	.layout li {
+	font-size: 0.938em;
+width: 100%;
+}
+
+.layout-header h2 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.0em;
+	line-height: 1.3;
+	color: #ee1955;
+	
+}
+}
+
+@media screen and (max-width: 60em) {
+	body {
+		font-size: 90%;
+	}
+
+	.layout-header {
+		position: relative;
+		margin: 0 auto;
+		height: auto;
+		max-width: 95%;
+		margin-top: 10%
+	}
+}
+
+@media screen and (max-height: 5em) {
+	.layout-header {
+		position: relative;
+		margin: 0 auto;
+		height: auto;
+		max-width: 100%;
+		margin-top: 10%
+	}
+	.skills {
+  	column-count: 1;
+	}
+.skills li {
+
+   width:100%;
+}
+.layout-header h2 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.0em;
+	line-height: 1.3;
+	color: #ee1955;
+	
+}
+
+
+}
