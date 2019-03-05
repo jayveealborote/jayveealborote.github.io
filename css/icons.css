@@ -23,7 +23,7 @@
 
 .bt-icon:before,
 .bt-icon-alt:before {
-  font-family: "FontAwesome";
+  font-family: "minicons-webalys";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -153,20 +153,19 @@
 }
 
 .icon-twitter:before {
-  content: "\f099";
+  content: "\e01c";
 }
 
 .icon-gplus:before {
   content: "\e020";
 }
 
-
 .icon-github:before {
-  content: "\f09b";
+  content: "\e021";
 }
 
 .icon-facebook:before {
-  content: "\f09a";
+  content: "\e01d";
 }
 
 /* Font Awesome */
@@ -190,7 +189,4 @@
 }
 .icon-play:before {
   content: "\f04b";
-}
-.icon-linkedin:before {
-  content: "\f0e1";
 }

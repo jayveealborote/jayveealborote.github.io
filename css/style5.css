@@ -7,49 +7,11 @@
 }
 
 body  {
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	background-color: #000;
-
+	background: #4ba409;
 }
 
-
-.fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-	background-color: #000;
-	opacity: 0.2;
-    overflow: hidden;
-    z-index: -100;
-}
-
-.fullscreen-bg__video {
-  
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-
-}
 .container {
-	padding: 0.625em;
-	opacity: 0.8;
-   background-color: #000;
-   	width: 100vw;
-     height: 100vh;
-   
-
+	padding: 80px;
 }
 
 .bt-menu {
@@ -58,10 +20,10 @@ body  {
 	left: 0;
 	width: 100%;
 	height: 0;
-	border-width: 0.000em;
+	border-width: 0px;
 	border-style: solid;
 	border-color: #333;
-	color: #cf0681;
+	background-color: rgba(0,0,0,0);
 	-webkit-backface-visibility: hidden;
 	-webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
 	transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
@@ -69,7 +31,7 @@ body  {
 
 .bt-menu.bt-menu-open {
 	height: 100%;
-	border-width: 0.000em 0.000em 3.125em 9.375em;
+	border-width: 0px 0px 50px 150px;
 	background-color: rgba(0,0,0,0.3);
 	-webkit-transition: border-width 0.3s, background-color 0.3s;
 	transition: border-width 0.3s, background-color 0.3s;
@@ -78,7 +40,6 @@ body  {
 .bt-overlay {
 	position: absolute;
 	width: 100%;
-
 }
 
 .bt-menu-open .bt-overlay {
@@ -87,19 +48,13 @@ body  {
 
 .bt-menu-trigger {
 	position: fixed;
-	top: 0.625em;
-	left: 1.250em;
+	top: 10px;
+	left: 20px;
 	z-index: 100;
 	display: block;
-	width: 3.125em;
-	height: 3.125em;
+	width: 50px;
+	height: 50px;
 	cursor: pointer;
-	color: #a4a6a7;
-}
-
-.bt-menu-trigger:hover {
-color: #333;
-
 }
 
 .bt-menu-trigger span {
@@ -110,7 +65,7 @@ color: #333;
 	width: 100%;
 	height: 8%;
 	background-color: #fff;
-	font-size: 0.000em;
+	font-size: 0px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -121,15 +76,12 @@ color: #333;
 	transition: background-color 0.3s;
 }
 
-
-
 .bt-menu-trigger span:before,
 .bt-menu-trigger span:after {
 	position: absolute;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	color: #000;
 	background: #fff;
 	content: '';
 	-webkit-transition: -webkit-transform 0.3s;
@@ -160,12 +112,11 @@ color: #333;
 	position: fixed;
 	margin: 0;
 	padding: 0;
-
 	list-style: none;
 }
 
 .bt-menu ul:first-of-type {
-	top: 4.688em;
+	top: 75px;
 	left: 0;
 }
 
@@ -177,12 +128,11 @@ color: #333;
 .bt-menu ul li,
 .bt-menu ul li a {
 	display: block;
-
 }
 
 .bt-menu ul:nth-of-type(2) li {
 	float: left;
-	font-size: 0.000em;
+	font-size: 0px;
 }
 
 .bt-menu ul li {
@@ -202,9 +152,9 @@ color: #333;
 
 /* First menu */
 .bt-menu ul:first-of-type li {
-	width: 9.375em;
-	height: 3.125em;
-	line-height: 3.125em;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
 	-webkit-transform: translate3d(-100%,50%,0);
 	transform: translate3d(-100%,50%,0);
 }
@@ -216,9 +166,9 @@ color: #333;
 
 /* Second menu */
 .bt-menu ul:nth-of-type(2) li {
-	width: 3.750em;
-	height: 3.125em;
-	line-height: 3.125em;
+	width: 60px;
+	height: 50px;
+	line-height: 50px;
 	-webkit-transform: scale(0);
 	transform: scale(0);
 }
@@ -255,29 +205,29 @@ color: #333;
 }
 
 .bt-menu ul:first-of-type li a {
-	padding: 0 1.250em;
-	box-shadow: inset 0 0.063em rgba(0,0,0,0.2);
+	padding: 0 20px;
+	box-shadow: inset 0 1px rgba(0,0,0,0.2);
 	color: #fff;
 	text-transform: uppercase;
-	letter-spacing: 0.063em;
+	letter-spacing: 1px;
 	font-size: 1em;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
 
 .bt-menu ul:first-of-type li:last-child a {
-	box-shadow: inset 0 0.063em rgba(0,0,0,0.2), inset 0 -0.063em rgba(0,0,0,0.2);
+	box-shadow: inset 0 1px rgba(0,0,0,0.2), inset 0 -1px rgba(0,0,0,0.2);
 }
 
 .bt-menu ul:nth-of-type(2) li a {
 	color: transparent;
 	text-align: center;
-	font-size: 0.0000em;
+	font-size: 0px;
 }
 
 .bt-menu ul li a:before {
-	color: #000;
-	font-size: 1.500em;
+	color: #fff;
+	font-size: 24px;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
@@ -286,21 +236,5 @@ color: #333;
 .bt-menu ul:first-of-type li a:focus,
 .bt-menu ul li a:hover:before,
 .bt-menu ul li a:focus:before {
-	color: #0b94c7;
-	font-weight: bold;
-}
-
-
-@media screen and (max-height: 29em) {
-	
-.bt-menu-trigger {
-	position: fixed;
-	top: 1.250em;
-	left: 1.250em;
-	z-index: 100;
-	display: block;
-	width: 2.188em;
-	height: 2.188em;
-	cursor: pointer;
-}
+	color: #1abc9c;
 }
